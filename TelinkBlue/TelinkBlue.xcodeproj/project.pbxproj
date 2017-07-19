@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A2E3F2F51F1EF2040028470B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E3F2F41F1EF2040028470B /* AppDelegate.swift */; };
+		A2E3F2F71F1EF2040028470B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E3F2F61F1EF2040028470B /* ViewController.swift */; };
+		A2E3F2FA1F1EF2040028470B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E3F2F81F1EF2040028470B /* Main.storyboard */; };
+		A2E3F2FC1F1EF2040028470B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2E3F2FB1F1EF2040028470B /* Assets.xcassets */; };
+		A2E3F2FF1F1EF2040028470B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2E3F2FD1F1EF2040028470B /* LaunchScreen.storyboard */; };
+		A2E3F30A1F1EF2040028470B /* TelinkBlueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E3F3091F1EF2040028470B /* TelinkBlueTests.swift */; };
+		A2E3F3151F1EF2040028470B /* TelinkBlueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E3F3141F1EF2040028470B /* TelinkBlueUITests.swift */; };
+		A2E3F3231F1EF21F0028470B /* Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E3F3221F1EF21F0028470B /* Bluetooth.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A2E3F3061F1EF2040028470B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2E3F2E91F1EF2040028470B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2E3F2F01F1EF2040028470B;
+			remoteInfo = TelinkBlue;
+		};
+		A2E3F3111F1EF2040028470B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2E3F2E91F1EF2040028470B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2E3F2F01F1EF2040028470B;
+			remoteInfo = TelinkBlue;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A2E3F2F11F1EF2040028470B /* TelinkBlue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelinkBlue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2E3F2F41F1EF2040028470B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A2E3F2F61F1EF2040028470B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A2E3F2F91F1EF2040028470B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A2E3F2FB1F1EF2040028470B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2E3F2FE1F1EF2040028470B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A2E3F3001F1EF2040028470B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2E3F3051F1EF2040028470B /* TelinkBlueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelinkBlueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2E3F3091F1EF2040028470B /* TelinkBlueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelinkBlueTests.swift; sourceTree = "<group>"; };
+		A2E3F30B1F1EF2040028470B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2E3F3101F1EF2040028470B /* TelinkBlueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelinkBlueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2E3F3141F1EF2040028470B /* TelinkBlueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelinkBlueUITests.swift; sourceTree = "<group>"; };
+		A2E3F3161F1EF2040028470B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2E3F3221F1EF21F0028470B /* Bluetooth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bluetooth.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2E3F2EE1F1EF2040028470B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2E3F3021F1EF2040028470B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2E3F30D1F1EF2040028470B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2E3F2E81F1EF2040028470B = {
+			isa = PBXGroup;
+			children = (
+				A2E3F2F31F1EF2040028470B /* TelinkBlue */,
+				A2E3F3081F1EF2040028470B /* TelinkBlueTests */,
+				A2E3F3131F1EF2040028470B /* TelinkBlueUITests */,
+				A2E3F2F21F1EF2040028470B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A2E3F2F21F1EF2040028470B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2E3F2F11F1EF2040028470B /* TelinkBlue.app */,
+				A2E3F3051F1EF2040028470B /* TelinkBlueTests.xctest */,
+				A2E3F3101F1EF2040028470B /* TelinkBlueUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2E3F2F31F1EF2040028470B /* TelinkBlue */ = {
+			isa = PBXGroup;
+			children = (
+				A2E3F2F41F1EF2040028470B /* AppDelegate.swift */,
+				A2E3F3221F1EF21F0028470B /* Bluetooth.swift */,
+				A2E3F2F61F1EF2040028470B /* ViewController.swift */,
+				A2E3F2F81F1EF2040028470B /* Main.storyboard */,
+				A2E3F2FB1F1EF2040028470B /* Assets.xcassets */,
+				A2E3F2FD1F1EF2040028470B /* LaunchScreen.storyboard */,
+				A2E3F3001F1EF2040028470B /* Info.plist */,
+			);
+			path = TelinkBlue;
+			sourceTree = "<group>";
+		};
+		A2E3F3081F1EF2040028470B /* TelinkBlueTests */ = {
+			isa = PBXGroup;
+			children = (
+				A2E3F3091F1EF2040028470B /* TelinkBlueTests.swift */,
+				A2E3F30B1F1EF2040028470B /* Info.plist */,
+			);
+			path = TelinkBlueTests;
+			sourceTree = "<group>";
+		};
+		A2E3F3131F1EF2040028470B /* TelinkBlueUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A2E3F3141F1EF2040028470B /* TelinkBlueUITests.swift */,
+				A2E3F3161F1EF2040028470B /* Info.plist */,
+			);
+			path = TelinkBlueUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2E3F2F01F1EF2040028470B /* TelinkBlue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2E3F3191F1EF2040028470B /* Build configuration list for PBXNativeTarget "TelinkBlue" */;
+			buildPhases = (
+				A2E3F2ED1F1EF2040028470B /* Sources */,
+				A2E3F2EE1F1EF2040028470B /* Frameworks */,
+				A2E3F2EF1F1EF2040028470B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TelinkBlue;
+			productName = TelinkBlue;
+			productReference = A2E3F2F11F1EF2040028470B /* TelinkBlue.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A2E3F3041F1EF2040028470B /* TelinkBlueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2E3F31C1F1EF2040028470B /* Build configuration list for PBXNativeTarget "TelinkBlueTests" */;
+			buildPhases = (
+				A2E3F3011F1EF2040028470B /* Sources */,
+				A2E3F3021F1EF2040028470B /* Frameworks */,
+				A2E3F3031F1EF2040028470B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2E3F3071F1EF2040028470B /* PBXTargetDependency */,
+			);
+			name = TelinkBlueTests;
+			productName = TelinkBlueTests;
+			productReference = A2E3F3051F1EF2040028470B /* TelinkBlueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A2E3F30F1F1EF2040028470B /* TelinkBlueUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2E3F31F1F1EF2040028470B /* Build configuration list for PBXNativeTarget "TelinkBlueUITests" */;
+			buildPhases = (
+				A2E3F30C1F1EF2040028470B /* Sources */,
+				A2E3F30D1F1EF2040028470B /* Frameworks */,
+				A2E3F30E1F1EF2040028470B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2E3F3121F1EF2040028470B /* PBXTargetDependency */,
+			);
+			name = TelinkBlueUITests;
+			productName = TelinkBlueUITests;
+			productReference = A2E3F3101F1EF2040028470B /* TelinkBlueUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2E3F2E91F1EF2040028470B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Arvin;
+				TargetAttributes = {
+					A2E3F2F01F1EF2040028470B = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = J3AJAYU5N6;
+						ProvisioningStyle = Automatic;
+					};
+					A2E3F3041F1EF2040028470B = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = J3AJAYU5N6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A2E3F2F01F1EF2040028470B;
+					};
+					A2E3F30F1F1EF2040028470B = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = J3AJAYU5N6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A2E3F2F01F1EF2040028470B;
+					};
+				};
+			};
+			buildConfigurationList = A2E3F2EC1F1EF2040028470B /* Build configuration list for PBXProject "TelinkBlue" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2E3F2E81F1EF2040028470B;
+			productRefGroup = A2E3F2F21F1EF2040028470B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2E3F2F01F1EF2040028470B /* TelinkBlue */,
+				A2E3F3041F1EF2040028470B /* TelinkBlueTests */,
+				A2E3F30F1F1EF2040028470B /* TelinkBlueUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2E3F2EF1F1EF2040028470B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2E3F2FF1F1EF2040028470B /* LaunchScreen.storyboard in Resources */,
+				A2E3F2FC1F1EF2040028470B /* Assets.xcassets in Resources */,
+				A2E3F2FA1F1EF2040028470B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2E3F3031F1EF2040028470B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2E3F30E1F1EF2040028470B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2E3F2ED1F1EF2040028470B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2E3F2F71F1EF2040028470B /* ViewController.swift in Sources */,
+				A2E3F3231F1EF21F0028470B /* Bluetooth.swift in Sources */,
+				A2E3F2F51F1EF2040028470B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2E3F3011F1EF2040028470B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2E3F30A1F1EF2040028470B /* TelinkBlueTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2E3F30C1F1EF2040028470B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2E3F3151F1EF2040028470B /* TelinkBlueUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A2E3F3071F1EF2040028470B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2E3F2F01F1EF2040028470B /* TelinkBlue */;
+			targetProxy = A2E3F3061F1EF2040028470B /* PBXContainerItemProxy */;
+		};
+		A2E3F3121F1EF2040028470B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2E3F2F01F1EF2040028470B /* TelinkBlue */;
+			targetProxy = A2E3F3111F1EF2040028470B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A2E3F2F81F1EF2040028470B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2E3F2F91F1EF2040028470B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A2E3F2FD1F1EF2040028470B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2E3F2FE1F1EF2040028470B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2E3F3171F1EF2040028470B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A2E3F3181F1EF2040028470B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2E3F31A1F1EF2040028470B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J3AJAYU5N6;
+				INFOPLIST_FILE = TelinkBlue/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = otw0909.TelinkBlue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A2E3F31B1F1EF2040028470B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J3AJAYU5N6;
+				INFOPLIST_FILE = TelinkBlue/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = otw0909.TelinkBlue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A2E3F31D1F1EF2040028470B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = J3AJAYU5N6;
+				INFOPLIST_FILE = TelinkBlueTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = otw0909.TelinkBlueTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TelinkBlue.app/TelinkBlue";
+			};
+			name = Debug;
+		};
+		A2E3F31E1F1EF2040028470B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = J3AJAYU5N6;
+				INFOPLIST_FILE = TelinkBlueTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = otw0909.TelinkBlueTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TelinkBlue.app/TelinkBlue";
+			};
+			name = Release;
+		};
+		A2E3F3201F1EF2040028470B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = J3AJAYU5N6;
+				INFOPLIST_FILE = TelinkBlueUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = otw0909.TelinkBlueUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TelinkBlue;
+			};
+			name = Debug;
+		};
+		A2E3F3211F1EF2040028470B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = J3AJAYU5N6;
+				INFOPLIST_FILE = TelinkBlueUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = otw0909.TelinkBlueUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TelinkBlue;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2E3F2EC1F1EF2040028470B /* Build configuration list for PBXProject "TelinkBlue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2E3F3171F1EF2040028470B /* Debug */,
+				A2E3F3181F1EF2040028470B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2E3F3191F1EF2040028470B /* Build configuration list for PBXNativeTarget "TelinkBlue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2E3F31A1F1EF2040028470B /* Debug */,
+				A2E3F31B1F1EF2040028470B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A2E3F31C1F1EF2040028470B /* Build configuration list for PBXNativeTarget "TelinkBlueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2E3F31D1F1EF2040028470B /* Debug */,
+				A2E3F31E1F1EF2040028470B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A2E3F31F1F1EF2040028470B /* Build configuration list for PBXNativeTarget "TelinkBlueUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2E3F3201F1EF2040028470B /* Debug */,
+				A2E3F3211F1EF2040028470B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2E3F2E91F1EF2040028470B /* Project object */;
+}
