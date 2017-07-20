@@ -15,6 +15,16 @@
 		A2E3F30A1F1EF2040028470B /* TelinkBlueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E3F3091F1EF2040028470B /* TelinkBlueTests.swift */; };
 		A2E3F3151F1EF2040028470B /* TelinkBlueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E3F3141F1EF2040028470B /* TelinkBlueUITests.swift */; };
 		A2E3F3231F1EF21F0028470B /* Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E3F3221F1EF21F0028470B /* Bluetooth.swift */; };
+		A2E3F3591F209E930028470B /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A2E3F34F1F209E930028470B /* timg.jpeg */; };
+		A2E3F35A1F209E930028470B /* signal-strength-1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E3F3501F209E930028470B /* signal-strength-1@2x.png */; };
+		A2E3F35B1F209E930028470B /* signal-strength-1a@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E3F3511F209E930028470B /* signal-strength-1a@2x.png */; };
+		A2E3F35C1F209E930028470B /* signal-strength-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E3F3521F209E930028470B /* signal-strength-2@2x.png */; };
+		A2E3F35D1F209E930028470B /* signal-strength-2a@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E3F3531F209E930028470B /* signal-strength-2a@2x.png */; };
+		A2E3F35E1F209E930028470B /* signal-strength-3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E3F3541F209E930028470B /* signal-strength-3@2x.png */; };
+		A2E3F35F1F209E930028470B /* signal-strength-3a@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E3F3551F209E930028470B /* signal-strength-3a@2x.png */; };
+		A2E3F3601F209E930028470B /* signal-strength-4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E3F3561F209E930028470B /* signal-strength-4@2x.png */; };
+		A2E3F3611F209E930028470B /* signal-strength-4a@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E3F3571F209E930028470B /* signal-strength-4a@2x.png */; };
+		A2E3F3621F209E930028470B /* signal-strength-5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E3F3581F209E930028470B /* signal-strength-5@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,16 @@
 		A2E3F3141F1EF2040028470B /* TelinkBlueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelinkBlueUITests.swift; sourceTree = "<group>"; };
 		A2E3F3161F1EF2040028470B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2E3F3221F1EF21F0028470B /* Bluetooth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bluetooth.swift; sourceTree = "<group>"; };
+		A2E3F34F1F209E930028470B /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
+		A2E3F3501F209E930028470B /* signal-strength-1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal-strength-1@2x.png"; sourceTree = "<group>"; };
+		A2E3F3511F209E930028470B /* signal-strength-1a@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal-strength-1a@2x.png"; sourceTree = "<group>"; };
+		A2E3F3521F209E930028470B /* signal-strength-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal-strength-2@2x.png"; sourceTree = "<group>"; };
+		A2E3F3531F209E930028470B /* signal-strength-2a@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal-strength-2a@2x.png"; sourceTree = "<group>"; };
+		A2E3F3541F209E930028470B /* signal-strength-3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal-strength-3@2x.png"; sourceTree = "<group>"; };
+		A2E3F3551F209E930028470B /* signal-strength-3a@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal-strength-3a@2x.png"; sourceTree = "<group>"; };
+		A2E3F3561F209E930028470B /* signal-strength-4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal-strength-4@2x.png"; sourceTree = "<group>"; };
+		A2E3F3571F209E930028470B /* signal-strength-4a@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal-strength-4a@2x.png"; sourceTree = "<group>"; };
+		A2E3F3581F209E930028470B /* signal-strength-5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal-strength-5@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +124,7 @@
 				A2E3F2F61F1EF2040028470B /* ViewController.swift */,
 				A2E3F2F81F1EF2040028470B /* Main.storyboard */,
 				A2E3F2FB1F1EF2040028470B /* Assets.xcassets */,
+				A2E3F3631F209E9A0028470B /* imgs */,
 				A2E3F2FD1F1EF2040028470B /* LaunchScreen.storyboard */,
 				A2E3F3001F1EF2040028470B /* Info.plist */,
 			);
@@ -126,6 +147,23 @@
 				A2E3F3161F1EF2040028470B /* Info.plist */,
 			);
 			path = TelinkBlueUITests;
+			sourceTree = "<group>";
+		};
+		A2E3F3631F209E9A0028470B /* imgs */ = {
+			isa = PBXGroup;
+			children = (
+				A2E3F34F1F209E930028470B /* timg.jpeg */,
+				A2E3F3501F209E930028470B /* signal-strength-1@2x.png */,
+				A2E3F3511F209E930028470B /* signal-strength-1a@2x.png */,
+				A2E3F3521F209E930028470B /* signal-strength-2@2x.png */,
+				A2E3F3531F209E930028470B /* signal-strength-2a@2x.png */,
+				A2E3F3541F209E930028470B /* signal-strength-3@2x.png */,
+				A2E3F3551F209E930028470B /* signal-strength-3a@2x.png */,
+				A2E3F3561F209E930028470B /* signal-strength-4@2x.png */,
+				A2E3F3571F209E930028470B /* signal-strength-4a@2x.png */,
+				A2E3F3581F209E930028470B /* signal-strength-5@2x.png */,
+			);
+			name = imgs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,9 +276,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2E3F35D1F209E930028470B /* signal-strength-2a@2x.png in Resources */,
 				A2E3F2FF1F1EF2040028470B /* LaunchScreen.storyboard in Resources */,
 				A2E3F2FC1F1EF2040028470B /* Assets.xcassets in Resources */,
+				A2E3F3591F209E930028470B /* timg.jpeg in Resources */,
+				A2E3F35E1F209E930028470B /* signal-strength-3@2x.png in Resources */,
+				A2E3F35B1F209E930028470B /* signal-strength-1a@2x.png in Resources */,
 				A2E3F2FA1F1EF2040028470B /* Main.storyboard in Resources */,
+				A2E3F3601F209E930028470B /* signal-strength-4@2x.png in Resources */,
+				A2E3F3621F209E930028470B /* signal-strength-5@2x.png in Resources */,
+				A2E3F35F1F209E930028470B /* signal-strength-3a@2x.png in Resources */,
+				A2E3F35C1F209E930028470B /* signal-strength-2@2x.png in Resources */,
+				A2E3F3611F209E930028470B /* signal-strength-4a@2x.png in Resources */,
+				A2E3F35A1F209E930028470B /* signal-strength-1@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +568,7 @@
 				A2E3F31B1F1EF2040028470B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2E3F31C1F1EF2040028470B /* Build configuration list for PBXNativeTarget "TelinkBlueTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +577,7 @@
 				A2E3F31E1F1EF2040028470B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2E3F31F1F1EF2040028470B /* Build configuration list for PBXNativeTarget "TelinkBlueUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +586,7 @@
 				A2E3F3211F1EF2040028470B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
