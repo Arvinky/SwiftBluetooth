@@ -87,7 +87,7 @@ class BluetoothHandle: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate 
             device = Device()
             device?.peripheral = peripheral
             device?.rssi = RSSI
-            if advertisementData.count > 2 {
+            if advertisementData.count > 2&&advertisementData[AdvDataLocalName] != nil {
                 device?.name = (advertisementData[AdvDataLocalName] as! String)
                 device?.advertisement.addEntries(from: advertisementData)
             }else if (peripheral.name != nil) {
