@@ -118,10 +118,10 @@ class ViewController: BasicVC, BluetoothHandleProtocol , UITableViewDelegate, UI
         let indexPath = IndexPath.init(row: index!, section: 0)
         switch state {
         case .PeripheralStateUpdateRSSI:
-            tableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
+            tableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.none)
             break
         case .PeripheralStateDiscovered:
-            tableView.insertRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
+            tableView.insertRows(at: [indexPath], with: UITableViewRowAnimation.none)
             tableView.reloadData()
         case .PeripheralStateDiscoverATTTimout:
             let alert = UIAlertController.init(title: "tips", message: "discover time out", preferredStyle: UIAlertControllerStyle.alert)
@@ -143,7 +143,15 @@ class ViewController: BasicVC, BluetoothHandleProtocol , UITableViewDelegate, UI
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        <#code#>
+        BluetoothHandle.handle.stopScan()
+        if indexPath.row % 3 == 0{
+            ShowHandle.showTips("准备连接😆", ShowtipsViewType.ShowtipsViewTypeSmall)
+        }else if indexPath.row % 3 == 1{
+            ShowHandle.showTips("准备连接😆", ShowtipsViewType.ShowtipsViewTypeMiddle)
+        }else{
+            ShowHandle.showTips("准备连接😆", ShowtipsViewType.ShowtipsViewTypeBig)
+        }
+        ShowHandle.delayHidden(2)
     }
 }
 

@@ -14,6 +14,7 @@ let AdvDataLocalName = "kCBAdvDataLocalName"
 let AdvDataServiceUUIDs = "kCBAdvDataServiceUUIDs"
 let Unknow = "UnKnow"
 let UnName = "UnName"
+let TimeForUpdateRSSI = 2.0
 
 public class Device: NSObject {
     var peripheral : CBPeripheral?
@@ -67,11 +68,21 @@ class BluetoothHandle: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate 
     var devicesDiscovered = [Device]()
     var currentDevice : Device?
     var descriptors = [CBDescriptor]()
-    var disconverATTtimer : Timer?
+    var disconverATTTimer : Timer?
+    var updateRSSITimer : Timer?
     
     static let handle = BluetoothHandle.init()
-    static func startScan() { BluetoothHandle.handle.manager?.scanForPeripherals(withServices: nil, options: nil) }
-    static func stopScan() { BluetoothHandle.handle.manager?.stopScan() }
+    static func startScan() { BluetoothHandle.handle.startScan() }
+    static func stopScan() { BluetoothHandle.handle.stopScan() }
+    func startScan() { manager?.scanForPeripherals(withServices: nil, options: nil) }
+    func stopScan() { manager?.stopScan() }
+    func connect(_ peripheral : CBPeripheral?) {
+        if (peripheral == nil) || (peripheral?.state != CBPeripheralState.connected) { return }
+        if currentDevice?.peripheral?.state==CBPeripheralState.connected {
+            manager?.cancelPeripheralConnection((currentDevice?.peripheral)!)
+        }
+        manager?.connect(peripheral!, options: [CBConnectPeripheralOptionNotifyOnConnectionKey : true])
+    }
     
     private override init() {
         manager = CBCentralManager.init(delegate: nil, queue: DispatchQueue.main)
@@ -88,6 +99,9 @@ class BluetoothHandle: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate 
         return NSNotFound
     }
     func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
+        if updateRSSITimer == nil {
+            updateRSSITimer = Timer.scheduledTimer(timeInterval: TimeForUpdateRSSI, target: self, selector: #selector(startScan), userInfo: nil, repeats: true)
+        }
         let obj = self.whetherContainObj(devicesDiscovered, peripheral)
         var device : Device?
         if obj is Device {
@@ -106,8 +120,8 @@ class BluetoothHandle: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate 
             }
             device?.state = PeripheralState.PeripheralStateDiscovered
             devicesDiscovered.append(device!)
-            delegate?.updatePeripheralState!((device?.state)!, device!)
         }
+        delegate?.updatePeripheralState!((device?.state)!, device!)
         print("\(advertisementData)\n")
     }
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
@@ -119,7 +133,7 @@ class BluetoothHandle: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate 
         peripheral.delegate = self
         peripheral.discoverServices(nil)
         
-        disconverATTtimer = Timer.scheduledTimer(timeInterval: disconverATTTime, target: self, selector: #selector(BluetoothHandle.discoverATTTimeout), userInfo: nil, repeats: true)
+        disconverATTTimer = Timer.scheduledTimer(timeInterval: disconverATTTime, target: self, selector: #selector(BluetoothHandle.discoverATTTimeout), userInfo: nil, repeats: true)
     }
     
     func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
