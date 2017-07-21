@@ -25,6 +25,8 @@
 		A2E3F3601F209E930028470B /* signal-strength-4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E3F3561F209E930028470B /* signal-strength-4@2x.png */; };
 		A2E3F3611F209E930028470B /* signal-strength-4a@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E3F3571F209E930028470B /* signal-strength-4a@2x.png */; };
 		A2E3F3621F209E930028470B /* signal-strength-5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2E3F3581F209E930028470B /* signal-strength-5@2x.png */; };
+		A2E3F3691F21CD660028470B /* Showtips.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E3F3681F21CD660028470B /* Showtips.swift */; };
+		A2E3F36B1F21CDC00028470B /* ShowtipsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2E3F36A1F21CDC00028470B /* ShowtipsView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		A2E3F3561F209E930028470B /* signal-strength-4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal-strength-4@2x.png"; sourceTree = "<group>"; };
 		A2E3F3571F209E930028470B /* signal-strength-4a@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal-strength-4a@2x.png"; sourceTree = "<group>"; };
 		A2E3F3581F209E930028470B /* signal-strength-5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signal-strength-5@2x.png"; sourceTree = "<group>"; };
+		A2E3F3681F21CD660028470B /* Showtips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Showtips.swift; sourceTree = "<group>"; };
+		A2E3F36A1F21CDC00028470B /* ShowtipsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowtipsView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +126,9 @@
 				A2E3F2F41F1EF2040028470B /* AppDelegate.swift */,
 				A2E3F3221F1EF21F0028470B /* Bluetooth.swift */,
 				A2E3F2F61F1EF2040028470B /* ViewController.swift */,
+				A2E3F3681F21CD660028470B /* Showtips.swift */,
 				A2E3F2F81F1EF2040028470B /* Main.storyboard */,
+				A2E3F36A1F21CDC00028470B /* ShowtipsView.xib */,
 				A2E3F2FB1F1EF2040028470B /* Assets.xcassets */,
 				A2E3F3631F209E9A0028470B /* imgs */,
 				A2E3F2FD1F1EF2040028470B /* LaunchScreen.storyboard */,
@@ -279,6 +285,7 @@
 				A2E3F35D1F209E930028470B /* signal-strength-2a@2x.png in Resources */,
 				A2E3F2FF1F1EF2040028470B /* LaunchScreen.storyboard in Resources */,
 				A2E3F2FC1F1EF2040028470B /* Assets.xcassets in Resources */,
+				A2E3F36B1F21CDC00028470B /* ShowtipsView.xib in Resources */,
 				A2E3F3591F209E930028470B /* timg.jpeg in Resources */,
 				A2E3F35E1F209E930028470B /* signal-strength-3@2x.png in Resources */,
 				A2E3F35B1F209E930028470B /* signal-strength-1a@2x.png in Resources */,
@@ -315,6 +322,7 @@
 			files = (
 				A2E3F2F71F1EF2040028470B /* ViewController.swift in Sources */,
 				A2E3F3231F1EF21F0028470B /* Bluetooth.swift in Sources */,
+				A2E3F3691F21CD660028470B /* Showtips.swift in Sources */,
 				A2E3F2F51F1EF2040028470B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

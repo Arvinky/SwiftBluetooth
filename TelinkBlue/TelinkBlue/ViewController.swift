@@ -13,13 +13,49 @@ public class DeviceCell : UITableViewCell {
     @IBOutlet weak var rssiLab: UILabel!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var service: UILabel!
+    @IBOutlet weak var backG: UIImageView!
+    func contentWithModel(_ device : Device)  {
+        let rssi : NSNumber = device.rssi as! NSNumber
+        let rssiInt = abs(rssi.intValue);
+        let blue = UIColor.blue
+        var imgName : NSString?
+        rssiLab.text = device.rssiInfo
+        service.text = device.adveDataSevices
+        if rssiInt>0 && rssiInt<100 {
+            imgName =  NSString.init(format: "signal-strength-%d", (-rssiInt + 100)/20 + 1)
+            rssiImg.image = UIImage.init(named: imgName! as String)?.imageWithTintColor(color: blue)
+        }else if(rssiInt==100){
+            imgName = NSString.init(format: "signal-strength-%d", (-rssiInt + 100)/20)
+            rssiImg.image = UIImage.init(named: imgName! as String)?.imageWithTintColor(color: blue)
+        }
+        
+        name.text = device.name
+        service.text = device.adveDataSevices   
+    }
+    public override func awakeFromNib() {
+        super.awakeFromNib()
+        let gray = UIColor.gray
+        backG.image = UIImage.init(named: "signal-strength-5.png")?.imageWithTintColor(color: gray)
+    }
 }
+extension UIImage {
+    func imageWithTintColor(color : UIColor) -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(self.size, false, 0);
+        color.setFill()
+        let bounds = CGRect.init(x: 0, y: 0, width: self.size.width, height: self.size.height);
+        UIRectFill(bounds);
+        draw(in: bounds, blendMode: CGBlendMode.destinationIn, alpha: 1.0);
+        let image = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        return image
+    }
+}
+
 class BasicVC : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         normalSetting()
     }
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setBlock()
@@ -80,7 +116,6 @@ class ViewController: BasicVC, BluetoothHandleProtocol , UITableViewDelegate, UI
     func updatePeripheralState(_ state: PeripheralState, _ device: Device) {
         let index = BluetoothHandle.handle.devicesDiscovered.index(of: device)
         let indexPath = IndexPath.init(row: index!, section: 0)
-        
         switch state {
         case .PeripheralStateUpdateRSSI:
             tableView.reloadRows(at: [indexPath], with: UITableViewRowAnimation.automatic)
@@ -104,10 +139,11 @@ class ViewController: BasicVC, BluetoothHandleProtocol , UITableViewDelegate, UI
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DeviceCell") as! DeviceCell
         let  device = BluetoothHandle.handle.devicesDiscovered[indexPath.row]
-        
-        cell.name.text = device.name
-        cell.service.text = device.adveDataSevices
+        cell.contentWithModel(device)
         return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        <#code#>
     }
 }
 

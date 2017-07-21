@@ -33,31 +33,31 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signal-strength-5.png" translatesAutoresizingMaskIntoConstraints="NO" id="agg-Oe-2RD">
-                                                    <rect key="frame" x="4" y="7.5" width="22" height="22"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="agg-Oe-2RD">
+                                                    <rect key="frame" x="4" y="9.5" width="22" height="22"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="agg-Oe-2RD" secondAttribute="height" id="KOx-Wh-yVs"/>
                                                     </constraints>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signal-strength-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="2YW-kQ-hBm">
-                                                    <rect key="frame" x="4" y="7.5" width="22" height="22"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2YW-kQ-hBm">
+                                                    <rect key="frame" x="4" y="9.5" width="22" height="22"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="2YW-kQ-hBm" secondAttribute="height" id="Hah-Tt-bDV"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2L-ib-JNn">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="---" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2L-ib-JNn">
                                                     <rect key="frame" x="7.5" y="35.5" width="15" height="12"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UnNamed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEg-9n-vcU">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="UnNamed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEg-9n-vcU">
                                                     <rect key="frame" x="34" y="8" width="81.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NoSevices" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0F-4A-Tbm">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="NoSevices" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0F-4A-Tbm">
                                                     <rect key="frame" x="34" y="33" width="68.5" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
@@ -73,7 +73,7 @@
                                                 <constraint firstItem="agg-Oe-2RD" firstAttribute="leading" secondItem="biR-Nz-Ak1" secondAttribute="leading" constant="4" id="ICL-vW-69F"/>
                                                 <constraint firstItem="vEg-9n-vcU" firstAttribute="top" secondItem="biR-Nz-Ak1" secondAttribute="top" constant="8" id="SU6-7f-d3R"/>
                                                 <constraint firstItem="T0F-4A-Tbm" firstAttribute="leading" secondItem="vEg-9n-vcU" secondAttribute="leading" id="XBy-Ib-iAj"/>
-                                                <constraint firstItem="agg-Oe-2RD" firstAttribute="centerY" secondItem="vEg-9n-vcU" secondAttribute="centerY" id="gTS-W7-yWs"/>
+                                                <constraint firstItem="agg-Oe-2RD" firstAttribute="centerY" secondItem="vEg-9n-vcU" secondAttribute="centerY" constant="2" id="gTS-W7-yWs"/>
                                                 <constraint firstItem="vEg-9n-vcU" firstAttribute="leading" secondItem="2YW-kQ-hBm" secondAttribute="trailing" constant="8" id="qqB-hr-C2E"/>
                                                 <constraint firstItem="2YW-kQ-hBm" firstAttribute="leading" secondItem="agg-Oe-2RD" secondAttribute="leading" id="u5E-eF-QtA"/>
                                                 <constraint firstItem="2YW-kQ-hBm" firstAttribute="width" secondItem="2YW-kQ-hBm" secondAttribute="height" id="v2e-np-e60"/>
@@ -82,6 +82,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="backG" destination="agg-Oe-2RD" id="eak-uX-ubi"/>
                                             <outlet property="name" destination="vEg-9n-vcU" id="x2A-p7-lWu"/>
                                             <outlet property="rssiImg" destination="2YW-kQ-hBm" id="PZu-K5-iOl"/>
                                             <outlet property="rssiLab" destination="w2L-ib-JNn" id="4Uc-Px-6L1"/>
@@ -131,8 +132,4 @@
             <point key="canvasLocation" x="136.80000000000001" y="792.95352323838085"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="signal-strength-1.png" width="22" height="22"/>
-        <image name="signal-strength-5.png" width="22" height="22"/>
-    </resources>
 </document>

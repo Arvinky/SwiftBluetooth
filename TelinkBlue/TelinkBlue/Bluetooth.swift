@@ -12,7 +12,8 @@ let AdvDataManafacturerData = "kCBAdvDataManufacturerData"
 let AdvDataConnectedAble = "kCBAdvDataIsConnectable"
 let AdvDataLocalName = "kCBAdvDataLocalName"
 let AdvDataServiceUUIDs = "kCBAdvDataServiceUUIDs"
-
+let Unknow = "UnKnow"
+let UnName = "UnName"
 
 public class Device: NSObject {
     var peripheral : CBPeripheral?
@@ -21,7 +22,7 @@ public class Device: NSObject {
     var beenConnect : Bool?
     var advertisement : NSMutableDictionary = NSMutableDictionary.init()
     var rssi : Any?
-    var name = "Unknow"
+    var name = "UnName"
     var adveDataSevices : String {
         for str in advertisement.allKeys {
             if (str as! String).compare(AdvDataServiceUUIDs)==ComparisonResult.orderedSame {
@@ -32,6 +33,17 @@ public class Device: NSObject {
             }
         }
         return "NoServices"
+    }
+    var rssiInfo : String {
+        if rssi is NSNumber {
+            let rssiValue : Int = (rssi as! NSNumber).intValue
+            if rssiValue < 0 { return String(rssiValue) }
+            return "---"
+        }
+        if (rssi is String) || (rssi is NSString) {
+            return rssi as! String
+        }
+        return UnName
     }
 }
 @objc public enum PeripheralState :Int {
@@ -62,7 +74,6 @@ class BluetoothHandle: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate 
     static func stopScan() { BluetoothHandle.handle.manager?.stopScan() }
     
     private override init() {
-        _ = DispatchQueue.init(label: "BluetoothQuene")
         manager = CBCentralManager.init(delegate: nil, queue: DispatchQueue.main)
     }
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
@@ -93,7 +104,6 @@ class BluetoothHandle: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate 
             }else if (peripheral.name != nil) {
                 device?.name = peripheral.name!
             }
-            
             device?.state = PeripheralState.PeripheralStateDiscovered
             devicesDiscovered.append(device!)
             delegate?.updatePeripheralState!((device?.state)!, device!)
