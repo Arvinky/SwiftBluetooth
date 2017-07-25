@@ -113,8 +113,10 @@ class ViewController: BasicVC, BluetoothHandleProtocol , UITableViewDelegate, UI
     func delayDismiss(_ alert : UIAlertController) {
         alert.dismiss(animated: true, completion: nil)
     }
+    
     func updatePeripheralState(_ state: PeripheralState, _ device: Device) {
-        let index = BluetoothHandle.handle.devicesDiscovered.index(of: device)
+        let index = BluetoothHandle.handle.devicesDiscovered.index(where: { $0.peripheral?.identifyString.compare((device.peripheral?.identifyString)!) == ComparisonResult.orderedSame })
+        
         let indexPath = IndexPath.init(row: index!, section: 0)
         switch state {
         case .PeripheralStateUpdateRSSI:

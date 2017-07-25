@@ -16,7 +16,8 @@ let Unknow = "UnKnow"
 let UnName = "UnName"
 let TimeForUpdateRSSI = 2.0
 
-public class Device: NSObject {
+
+public class Device {
     var peripheral : CBPeripheral?
     var sevices : [CBMutableService] = [CBMutableService].init()
     var state : PeripheralState?
@@ -47,12 +48,13 @@ public class Device: NSObject {
         return UnName
     }
 }
-@objc public enum PeripheralState :Int {
+
+public enum PeripheralState :Int {
     case PeripheralStateDiscovered = 1, PeripheralStateUpdateRSSI, PeripheralStateDidConnect, PeripheralStateFinishDiscoverATT,PeripheralStateDiscoverATTTimout
 }
-@objc public protocol BluetoothHandleProtocol : NSObjectProtocol {
+public protocol BluetoothHandleProtocol : NSObjectProtocol {
     func updateBluetoothState(_ state : CBManagerState)
-    @objc optional func updatePeripheralState(_ state : PeripheralState, _ device : Device)
+    func updatePeripheralState(_ state : PeripheralState, _ device : Device)
 }
 extension CBPeripheral {
     var identifyString : String {
@@ -121,14 +123,14 @@ class BluetoothHandle: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate 
             device?.state = PeripheralState.PeripheralStateDiscovered
             devicesDiscovered.append(device!)
         }
-        delegate?.updatePeripheralState!((device?.state)!, device!)
+        delegate?.updatePeripheralState((device?.state)!, device!)
         print("\(advertisementData)\n")
     }
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
         let device = whetherContainObj(devicesDiscovered, peripheral)
         let obj = device as! Device
         obj.state = PeripheralState.PeripheralStateDidConnect
-        delegate?.updatePeripheralState!(obj.state!, obj)
+        delegate?.updatePeripheralState(obj.state!, obj)
         self.currentDevice = obj
         peripheral.delegate = self
         peripheral.discoverServices(nil)
@@ -170,12 +172,12 @@ class BluetoothHandle: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate 
         }
         if descriptors.count < 1 {
             self.currentDevice?.state = PeripheralState.PeripheralStateFinishDiscoverATT
-            delegate?.updatePeripheralState!(PeripheralState.PeripheralStateFinishDiscoverATT, currentDevice!)
+            delegate?.updatePeripheralState(PeripheralState.PeripheralStateFinishDiscoverATT, currentDevice!)
         }
     }
     
-    func discoverATTTimeout() {
+    @objc func discoverATTTimeout() {
         self.currentDevice?.state = PeripheralState.PeripheralStateDiscoverATTTimout
-        delegate?.updatePeripheralState!(PeripheralState.PeripheralStateDiscoverATTTimout, currentDevice!)
+        delegate?.updatePeripheralState(PeripheralState.PeripheralStateDiscoverATTTimout, currentDevice!)
     }
 }
